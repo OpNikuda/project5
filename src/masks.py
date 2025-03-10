@@ -39,4 +39,3 @@ def get_mask_account(account_number):
     masked_account = masked_part + last_four
     return masked_account
 
- #bebra
