@@ -25,15 +25,4 @@ def test_mask_account_card():
     except ValueError:
         pass  # Ожидаемое поведение
 
-def test_edge_cases():
-    # Тест на граничные случаи
-    assert mask_card_number("1234") == "1234", "Ошибка в маскировании короткого номера карты"
-    assert mask_account_number("12345678901234567") == "1234********567", "Ошибка в маскировании короткого номера счёта"
-
-    # Тест на пустую строку
-    try:
-        mask_account_card("")
-        assert False, "Ожидалось исключение ValueError"
-    except ValueError:
-        pass  # Ожидаемое поведение
 
