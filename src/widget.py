@@ -12,6 +12,7 @@ def mask_card_number(card_number):
        """
     return '*' * (len(card_number) - 4) + card_number[-4:]
 
+
 def mask_account_number(account_number):
     """
       Маскирует номер счёта, оставляя открытыми первые 4 и последние 4 цифры.
@@ -25,6 +26,7 @@ def mask_account_number(account_number):
                где 'XXXX' - первые и последние четыре цифры номера счёта.
       """
     return account_number[:4] + '*' * (len(account_number) - 8) + account_number[-4:]
+
 
 def mask_account_card(payment_info):
     """
